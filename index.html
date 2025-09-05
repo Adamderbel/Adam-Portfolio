@@ -67,16 +67,14 @@
             filter: drop-shadow(0 0 8px currentColor);
             transform: scale(1.1);
         }
-        .social-logo {
-            width: 2rem; /* 32px */
-            height: 2rem;
-            display: inline-block;
-            object-fit: contain; /* keeps aspect ratio */
-            filter: drop-shadow(0 0 4px white); /* optional glow */
-            transition: transform 0.3s;
+        .hugging-face-icon {
+            width: 32px;
+            height: 32px;
+            filter: invert(1) brightness(2) drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
+            transition: all 0.3s ease;
         }
-
-        .social-logo:hover {
+        .social-icon:hover .hugging-face-icon {
+            filter: invert(1) brightness(2) drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
             transform: scale(1.1);
         }
     </style>
@@ -107,36 +105,36 @@
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-cybergreen cyber-border inline-block">About Me</h2>
       </div>
       <p class="text-base sm:text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-        I’m <span class="text-cyberpurple">Adam Derbel</span>, an 
+        I'm <span class="text-cyberpurple">Adam Derbel</span>, an 
         <span class="text-cyberblue">AI & Data Science Engineer</span> based in Tunisia, 
-        currently pursuing my Master’s degree in <span class="text-cyberblue"> Software Engineering</span>.
-        My journey into AI started during my Computer Science bachelor’s studies. 
+        currently pursuing my Master's degree in <span class="text-cyberblue"> Software Engineering</span>.
+        My journey into AI started during my Computer Science bachelor's studies. 
         Although AI courses were limited, my passion and curiosity drove me to dive deeper through self learning and hands on projects.
         <br /><br />
-        Over time, I’ve built projects in <span class="font-semibold">LLMs, machine learning, deep learning, NLP, RAG chatbots with FAISS, automation, AI powered dashboards, forecasting, and fine tuning</span>.
+        Over time, I've built projects in <span class="font-semibold">LLMs, machine learning, deep learning, NLP, RAG chatbots with FAISS, automation, AI powered dashboards, forecasting, and fine tuning</span>.
         <br /><br />
        My focus is on building scalable, production ready AI systems that combine <span class="font-semibold">technical precision</span> with <span class="font-semibold">practical impact</span>. 
        I enjoy solving complex challenges, experimenting with innovative approaches, and contributing to projects that make a real difference. </p>
       <div class="text-center">
         <div class="flex flex-wrap justify-center space-x-6">
           <!-- GitHub -->
-          <a href="https://github.com/Adamderbel" target="_blank" class="text-cyberblue social-icon transition-all duration-300 hover:scale-110">
+          <a href="https://github.com/Adamderbel" target="_blank" class="text-cyberblue social-icon transition-all duration-300">
             <i data-feather="github" class="w-7 h-7 sm:w-8 sm:h-8"></i>
           </a>
 
           <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/adam-derbel" target="_blank" class="text-cyberpurple social-icon transition-all duration-300 hover:scale-110">
+          <a href="https://www.linkedin.com/in/adam-derbel" target="_blank" class="text-cyberpurple social-icon transition-all duration-300">
             <i data-feather="linkedin" class="w-7 h-7 sm:w-8 sm:h-8"></i>
           </a>
 
          <!-- Hugging Face -->
-            <a href="https://huggingface.co/AdamDE" target="_blank" class="social-icon transition-all duration-300 hover:scale-110 flex items-center">
+            <a href="https://huggingface.co/AdamDE" target="_blank" class="social-icon transition-all duration-300 flex items-center">
                 <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" 
-                    alt="Hugging Face" class="w-8 h-8 object-contain">
+                    alt="Hugging Face" class="hugging-face-icon">
             </a>
 
           <!-- Email -->
-          <a href="mailto:adamderbel33@gmail.com" class="text-cybergreen social-icon transition-all duration-300 hover:scale-110">
+          <a href="mailto:adamderbel33@gmail.com" class="text-cybergreen social-icon transition-all duration-300">
             <i data-feather="mail" class="w-7 h-7 sm:w-8 sm:h-8"></i>
           </a>
         </div>
@@ -339,7 +337,7 @@
     
     <!-- Description -->
     <p class="text-xl text-gray-300 mb-12 leading-relaxed max-w-2xl mx-auto">
-      I’m open to <span class="text-cyberblue font-semibold">full time</span>, 
+      I'm open to <span class="text-cyberblue font-semibold">full time</span>, 
       <span class="text-cyberpurple font-semibold">part time</span>, 
       <span class="text-cybergreen font-semibold">freelance</span>, 
       <span class="text-cyberblue font-semibold">remote</span>, or 
@@ -350,23 +348,23 @@
     <!-- Social Links -->
     <div class="flex justify-center space-x-10 mb-12">
       <!-- GitHub -->
-      <a href="https://github.com/Adamderbel" target="_blank" class="text-cyberblue hover:scale-110 transition-transform duration-300">
+      <a href="https://github.com/Adamderbel" target="_blank" class="text-cyberblue hover:scale-110 transition-transform duration-300 social-icon">
         <i data-feather="github" class="w-8 h-8"></i>
       </a>
 
       <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/adam-derbel" target="_blank" class="text-cyberpurple hover:scale-110 transition-transform duration-300">
+      <a href="https://www.linkedin.com/in/adam-derbel" target="_blank" class="text-cyberpurple hover:scale-110 transition-transform duration-300 social-icon">
         <i data-feather="linkedin" class="w-8 h-8"></i>
       </a>
 
       <!-- Hugging Face -->
-      <a href="https://huggingface.co/AdamDE" target="_blank" class="hover:scale-110 transition-transform duration-300">
+      <a href="https://huggingface.co/AdamDE" target="_blank" class="hover:scale-110 transition-transform duration-300 social-icon">
         <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" 
-             alt="Hugging Face" class="w-8 h-8">
+             alt="Hugging Face" class="hugging-face-icon">
       </a>
 
       <!-- Email -->
-      <a href="mailto:adamderbel33@gmail.com" class="text-cybergreen hover:scale-110 transition-transform duration-300">
+      <a href="mailto:adamderbel33@gmail.com" class="text-cybergreen hover:scale-110 transition-transform duration-300 social-icon">
         <i data-feather="mail" class="w-8 h-8"></i>
       </a>
     </div>
@@ -375,7 +373,7 @@
     <a href="mailto:adamderbel33@gmail.com" 
        class="inline-flex items-center px-8 py-4 border border-cyberblue rounded-xl text-lg font-medium text-cyberblue hover:bg-cyberblue hover:bg-opacity-10 transition-all duration-300">
       <i data-feather="send" class="mr-3 w-6 h-6"></i>
-      Let’s Work Together
+      Let's Work Together
     </a>
 
   </div>
