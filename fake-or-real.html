@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaggle Competition - Fake or Real Detection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #0a0a0a;
+            color: #f0f0f0;
+        }
+        .cyber-border {
+            position: relative;
+        }
+        .cyber-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #00f0ff, #b400ff, #00ff9d);
+        }
+        .text-cyberblue { color: #00f0ff; }
+        .text-cyberpurple { color: #b400ff; }
+        .text-cybergreen { color: #00ff9d; }
+        .bg-cardbg { background-color: #1a1a1a; }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <a href="index.html" class="inline-flex items-center text-cyberblue mb-8 hover:underline">
+            <i data-feather="arrow-left" class="mr-2 w-5 h-5"></i>
+            Back to Portfolio
+        </a>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="text-6xl mb-4">🧩</div>
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 cyber-border inline-block">Fake or Real: The Impostor Hunt</h1>
+            </div>
+
+            <!-- Project Description -->
+            <div class="bg-cardbg rounded-xl p-6 md:p-8 border border-gray-800 mb-12" data-aos="fade-up">
+                <h2 class="text-2xl font-bold mb-4 text-cyberblue">Project Description</h2>
+                <p class="text-gray-300 mb-6">
+                    A machine learning model developed for the Kaggle competition "Fake or Real: The Impostor Hunt" that distinguishes between real and fake text entries. 
+                    The solution uses advanced transformer models with data augmentation and sophisticated prediction rules.
+                </p>
+
+                <p class="text-center mb-4">
+                    <a href="https://www.kaggle.com/code/adamder7/fake-real-the-impostor-hunt" target="_blank" class="text-cyberpurple hover:underline">
+                        🏆 View Kaggle Competition
+                    </a>
+                </p>
+
+                <a href="https://github.com/Adamderbel/kaggle-fake-real-detection" target="_blank" class="inline-flex items-center text-cyberblue hover:underline">
+                    <i data-feather="github" class="mr-2 w-5 h-5"></i>
+                    View on GitHub
+                </a>
+            </div>
+
+            <!-- Key Features and Technologies -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Key Features -->
+                <div class="bg-cardbg rounded-xl p-6 border border-gray-800" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-4 text-cyberpurple flex items-center">
+                        <i data-feather="zap" class="mr-2 w-5 h-5"></i>
+                        Key Features
+                    </h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li>🧠 Advanced Transformer Models - DeBERTa-v3-large architecture</li>
+                        <li>📊 Data Augmentation - Reverse text pairs for robust training</li>
+                        <li>⚡ Smart Prediction Rules - Margin-based decision boundaries</li>
+                        <li>📈 Performance Metrics - Accuracy and F1-score optimization</li>
+                        <li>🔍 Text Pair Analysis - Comparative analysis of file pairs</li>
+                        <li>🛠️ Early Stopping - Prevents overfitting during training</li>
+                    </ul>
+                </div>
+
+                <!-- Technologies Used -->
+                <div class="bg-cardbg rounded-xl p-6 border border-gray-800" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-4 text-cybergreen flex items-center">
+                        <i data-feather="tool" class="mr-2 w-5 h-5"></i>
+                        Technologies Used
+                    </h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></li>
+                        <li><img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"></li>
+                        <li><img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face"></li>
+                        <li><img src="https://img.shields.io/badge/Transformers-000000?style=for-the-badge" alt="Transformers"></li>
+                        <li><img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas"></li>
+                        <li><img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn"></li>
+                        <li><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
+</body>
+</html>

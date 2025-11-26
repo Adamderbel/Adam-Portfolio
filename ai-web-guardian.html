@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Web Guardian - Chrome Extension</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #0a0a0a;
+            color: #f0f0f0;
+        }
+        .cyber-border {
+            position: relative;
+        }
+        .cyber-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #00f0ff, #b400ff, #00ff9d);
+        }
+        .text-cyberblue { color: #00f0ff; }
+        .text-cyberpurple { color: #b400ff; }
+        .text-cybergreen { color: #00ff9d; }
+        .bg-cardbg { background-color: #1a1a1a; }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <a href="index.html" class="inline-flex items-center text-cyberblue mb-8 hover:underline">
+            <i data-feather="arrow-left" class="mr-2 w-5 h-5"></i>
+            Back to Portfolio
+        </a>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="text-6xl mb-4">🧠</div>
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 cyber-border inline-block">AI Web Guardian</h1>
+                
+            </div>
+
+            <!-- Project Description -->
+            <div class="bg-cardbg rounded-xl p-6 md:p-8 border border-gray-800 mb-12" data-aos="fade-up">
+                <h2 class="text-2xl font-bold mb-4 text-cyberblue">Project Description</h2>
+                <p class="text-gray-300 mb-6">
+                    A Chrome MV3 extension that protects users in real-time while browsing. It analyzes every site you visit for trustworthiness, 
+                    cookie consent traps, hidden trackers, and unsafe links using Chrome's on-device AI APIs to provide clear, human-readable insights.
+                </p>
+
+                <div class="aspect-w-16 aspect-h-9 mb-6">
+                   <iframe class="w-full h-96 rounded-lg" 
+                        src="https://www.youtube-nocookie.com/embed/_Jq5sK6mswY" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <p class="text-center mb-4">
+                    <a href="https://www.youtube.com/watch?v=_Jq5sK6mswY" target="_blank" class="text-cyberpurple hover:underline">
+                        ▶ Watch Demo on YouTube
+                    </a>
+                </p>
+
+                    <div class="flex items-center justify-center space-x-6 mb-4">
+                    <a href="https://devpost.com/software/ai-web-guardian" target="_blank" class="text-cyberpurple hover:underline">
+                        🔗 View on Devpost
+                    </a>
+                <a href="https://github.com/Adamderbel/AI-Web-Guardian" target="_blank" class="inline-flex items-center text-cyberblue hover:underline">
+                    <i data-feather="github" class="mr-2 w-5 h-5"></i>
+                    View on GitHub
+                </a>
+                </div>
+            </div>
+
+            <!-- Key Features and Technologies -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Key Features -->
+                <div class="bg-cardbg rounded-xl p-6 border border-gray-800" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-4 text-cyberpurple flex items-center">
+                        <i data-feather="zap" class="mr-2 w-5 h-5"></i>
+                        Key Features
+                    </h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li>🛡️ Trust & Authenticity - SSL/HTTPS checks, domain verification</li>
+                        <li>🍪 Cookies & Consent - Banner detection with AI summarization</li>
+                        <li>🕵️ Hidden Threats - Tracker scanning and fingerprinting detection</li>
+                        <li>🔗 Link Safety - Real-time redirect analysis and phishing protection</li>
+                        <li>💬 AI Summaries - On-device text summarization using Chrome APIs</li>
+                        <li>🔒 Privacy-First - All processing happens locally in the browser</li>
+                    </ul>
+                </div>
+
+                <!-- Technologies Used -->
+                <div class="bg-cardbg rounded-xl p-6 border border-gray-800" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-4 text-cybergreen flex items-center">
+                        <i data-feather="tool" class="mr-2 w-5 h-5"></i>
+                        Technologies Used
+                    </h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"></li>
+                        <li><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"></li>
+                        <li><img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"></li>
+                        <li><img src="https://img.shields.io/badge/Chrome_Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Extension"></li>
+                        <li><img src="https://img.shields.io/badge/Chrome_AI_API-FF6D00?style=for-the-badge" alt="Chrome AI API"></li>
+                        <li><img src="https://img.shields.io/badge/Manifest_V3-34A853?style=for-the-badge" alt="Manifest V3"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
+</body>
+</html>
